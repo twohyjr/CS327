@@ -1,0 +1,266 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EBF9A8A51BD05FEF00ADF74E /* exceptions.c in Sources */ = {isa = PBXBuildFile; fileRef = EBF9A89D1BD05FEF00ADF74E /* exceptions.c */; settings = {ASSET_TAGS = (); }; };
+		EBF9A8A61BD05FEF00ADF74E /* makefile in Sources */ = {isa = PBXBuildFile; fileRef = EBF9A89F1BD05FEF00ADF74E /* makefile */; settings = {ASSET_TAGS = (); }; };
+		EBF9A8A71BD05FEF00ADF74E /* testformat.c in Sources */ = {isa = PBXBuildFile; fileRef = EBF9A8A01BD05FEF00ADF74E /* testformat.c */; settings = {ASSET_TAGS = (); }; };
+		EBF9A8A81BD05FEF00ADF74E /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = EBF9A8A11BD05FEF00ADF74E /* utils.c */; settings = {ASSET_TAGS = (); }; };
+		EBF9A8A91BD05FEF00ADF74E /* weatherio.c in Sources */ = {isa = PBXBuildFile; fileRef = EBF9A8A31BD05FEF00ADF74E /* weatherio.c */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EBF9A8911BD05FD700ADF74E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EBF9A8931BD05FD700ADF74E /* HW2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HW2; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBF9A89D1BD05FEF00ADF74E /* exceptions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = exceptions.c; sourceTree = "<group>"; };
+		EBF9A89E1BD05FEF00ADF74E /* exceptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exceptions.h; sourceTree = "<group>"; };
+		EBF9A89F1BD05FEF00ADF74E /* makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
+		EBF9A8A01BD05FEF00ADF74E /* testformat.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = testformat.c; sourceTree = "<group>"; };
+		EBF9A8A11BD05FEF00ADF74E /* utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utils.c; sourceTree = "<group>"; };
+		EBF9A8A21BD05FEF00ADF74E /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		EBF9A8A31BD05FEF00ADF74E /* weatherio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = weatherio.c; sourceTree = "<group>"; };
+		EBF9A8A41BD05FEF00ADF74E /* weatherio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = weatherio.h; sourceTree = "<group>"; };
+		EBF9A8AA1BD0602D00ADF74E /* AmesWeatherData.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = AmesWeatherData.csv; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBF9A8901BD05FD700ADF74E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EBF9A88A1BD05FD700ADF74E = {
+			isa = PBXGroup;
+			children = (
+				EBF9A8951BD05FD700ADF74E /* HW2 */,
+				EBF9A8941BD05FD700ADF74E /* Products */,
+				EBF9A8AA1BD0602D00ADF74E /* AmesWeatherData.csv */,
+			);
+			sourceTree = "<group>";
+		};
+		EBF9A8941BD05FD700ADF74E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBF9A8931BD05FD700ADF74E /* HW2 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBF9A8951BD05FD700ADF74E /* HW2 */ = {
+			isa = PBXGroup;
+			children = (
+				EBF9A89D1BD05FEF00ADF74E /* exceptions.c */,
+				EBF9A89E1BD05FEF00ADF74E /* exceptions.h */,
+				EBF9A89F1BD05FEF00ADF74E /* makefile */,
+				EBF9A8A01BD05FEF00ADF74E /* testformat.c */,
+				EBF9A8A11BD05FEF00ADF74E /* utils.c */,
+				EBF9A8A21BD05FEF00ADF74E /* utils.h */,
+				EBF9A8A31BD05FEF00ADF74E /* weatherio.c */,
+				EBF9A8A41BD05FEF00ADF74E /* weatherio.h */,
+			);
+			path = HW2;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBF9A8921BD05FD700ADF74E /* HW2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBF9A89A1BD05FD700ADF74E /* Build configuration list for PBXNativeTarget "HW2" */;
+			buildPhases = (
+				EBF9A88F1BD05FD700ADF74E /* Sources */,
+				EBF9A8901BD05FD700ADF74E /* Frameworks */,
+				EBF9A8911BD05FD700ADF74E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HW2;
+			productName = HW2;
+			productReference = EBF9A8931BD05FD700ADF74E /* HW2 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBF9A88B1BD05FD700ADF74E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = thericktwohy;
+				TargetAttributes = {
+					EBF9A8921BD05FD700ADF74E = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = EBF9A88E1BD05FD700ADF74E /* Build configuration list for PBXProject "HW2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EBF9A88A1BD05FD700ADF74E;
+			productRefGroup = EBF9A8941BD05FD700ADF74E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBF9A8921BD05FD700ADF74E /* HW2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBF9A88F1BD05FD700ADF74E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBF9A8A81BD05FEF00ADF74E /* utils.c in Sources */,
+				EBF9A8A51BD05FEF00ADF74E /* exceptions.c in Sources */,
+				EBF9A8A71BD05FEF00ADF74E /* testformat.c in Sources */,
+				EBF9A8A91BD05FEF00ADF74E /* weatherio.c in Sources */,
+				EBF9A8A61BD05FEF00ADF74E /* makefile in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EBF9A8981BD05FD700ADF74E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		EBF9A8991BD05FD700ADF74E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		EBF9A89B1BD05FD700ADF74E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EBF9A89C1BD05FD700ADF74E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBF9A88E1BD05FD700ADF74E /* Build configuration list for PBXProject "HW2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBF9A8981BD05FD700ADF74E /* Debug */,
+				EBF9A8991BD05FD700ADF74E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBF9A89A1BD05FD700ADF74E /* Build configuration list for PBXNativeTarget "HW2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBF9A89B1BD05FD700ADF74E /* Debug */,
+				EBF9A89C1BD05FD700ADF74E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EBF9A88B1BD05FD700ADF74E /* Project object */;
+}
