@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 /*
@@ -14,7 +15,9 @@ using namespace std;
 
 int main(int argc, const char * argv[]) {
     
-    
+    int x = 0;
+    cout << "HELLO WORLD" << endl;
+    cin >> x;
     
     return 0;
 }
