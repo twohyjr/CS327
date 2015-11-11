@@ -17,7 +17,7 @@
 		BD548BF11BF28D6100D980AF /* sndplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD548BEF1BF28D6100D980AF /* sndplay.cpp */; };
 		BD548BF51BF28F8600D980AF /* Exceptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD548BF31BF28F8600D980AF /* Exceptions.cpp */; };
 		BD548BF81BF2905D00D980AF /* FileHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD548BF61BF2905D00D980AF /* FileHandler.cpp */; };
-		BD548BFA1BF2956800D980AF /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = BD548BF91BF2956800D980AF /* Makefile */; };
+		BD548BFA1BF2956800D980AF /* Makefile.txt in Sources */ = {isa = PBXBuildFile; fileRef = BD548BF91BF2956800D980AF /* Makefile.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -53,7 +53,7 @@
 		BD548BF41BF28F8600D980AF /* Exceptions.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Exceptions.hpp; sourceTree = "<group>"; };
 		BD548BF61BF2905D00D980AF /* FileHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileHandler.cpp; sourceTree = "<group>"; };
 		BD548BF71BF2905D00D980AF /* FileHandler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FileHandler.hpp; sourceTree = "<group>"; };
-		BD548BF91BF2956800D980AF /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		BD548BF91BF2956800D980AF /* Makefile.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Makefile.txt; path = ../Makefile.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +70,6 @@
 		BD548BC91BF284FB00D980AF = {
 			isa = PBXGroup;
 			children = (
-				BD548BF91BF2956800D980AF /* Makefile */,
 				BD548BD41BF284FB00D980AF /* HW4 */,
 				BD548BD31BF284FB00D980AF /* Products */,
 			);
@@ -87,6 +86,7 @@
 		BD548BD41BF284FB00D980AF /* HW4 */ = {
 			isa = PBXGroup;
 			children = (
+				BD548BF91BF2956800D980AF /* Makefile.txt */,
 				BD548BF21BF28F7200D980AF /* Util */,
 				BD548BDF1BF2869A00D980AF /* Programs */,
 				BD548BD51BF284FB00D980AF /* main.cpp */,
@@ -185,7 +185,7 @@
 				BD548BD61BF284FB00D980AF /* main.cpp in Sources */,
 				BD548BEB1BF28BD800D980AF /* sndcvt.cpp in Sources */,
 				BD548BE21BF286C200D980AF /* sndcat.cpp in Sources */,
-				BD548BFA1BF2956800D980AF /* Makefile in Sources */,
+				BD548BFA1BF2956800D980AF /* Makefile.txt in Sources */,
 				BD548BE81BF286D800D980AF /* sndgen.cpp in Sources */,
 				BD548BE51BF286CE00D980AF /* sndmix.cpp in Sources */,
 				BD548BF51BF28F8600D980AF /* Exceptions.cpp in Sources */,

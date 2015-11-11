@@ -2,7 +2,7 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>WorkspacePath</key>
-	<string>/Users/twohyjr/Documents/School/Fall 2015/CS327/HW4/HW4.xcodeproj</string>
+	<key>Version</key>
+	<integer>5</integer>
 </dict>
 </plist>
