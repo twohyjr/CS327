@@ -1,6 +1,14 @@
 #include "sndinfo.hpp"
 
+
+using namespace std;
+
 int main(int argc, const char * argv[]) {
-     
-     return 0;
+    
+    cout << "Running sndinfo" << endl;
+    return 0;
+}
+
+void PrintRunning(){
+    
 }

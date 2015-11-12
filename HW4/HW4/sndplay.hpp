@@ -20,6 +20,7 @@
  6) --mute n : do not play instrument n
 */
 
+#include <iostream>
 #include <stdio.h>
 
 //TODO

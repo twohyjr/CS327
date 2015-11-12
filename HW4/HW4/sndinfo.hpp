@@ -16,9 +16,10 @@
  */
 
 #include <stdio.h>
+#include <iostream>
 
 
-//TODO
+void PrintRunning();
 
 
 #endif /* sndinfo_hpp */

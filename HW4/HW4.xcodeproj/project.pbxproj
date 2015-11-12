@@ -7,17 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BD548BD61BF284FB00D980AF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD548BD51BF284FB00D980AF /* main.cpp */; };
-		BD548BDE1BF2869400D980AF /* sndinfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD548BDC1BF2869400D980AF /* sndinfo.cpp */; };
-		BD548BE21BF286C200D980AF /* sndcat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD548BE01BF286C200D980AF /* sndcat.cpp */; };
-		BD548BE51BF286CE00D980AF /* sndmix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD548BE31BF286CE00D980AF /* sndmix.cpp */; };
-		BD548BE81BF286D800D980AF /* sndgen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD548BE61BF286D800D980AF /* sndgen.cpp */; };
-		BD548BEB1BF28BD800D980AF /* sndcvt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD548BE91BF28BD800D980AF /* sndcvt.cpp */; };
-		BD548BEE1BF28CB000D980AF /* sndfx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD548BEC1BF28CB000D980AF /* sndfx.cpp */; };
-		BD548BF11BF28D6100D980AF /* sndplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD548BEF1BF28D6100D980AF /* sndplay.cpp */; };
-		BD548BF51BF28F8600D980AF /* Exceptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD548BF31BF28F8600D980AF /* Exceptions.cpp */; };
-		BD548BF81BF2905D00D980AF /* FileHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD548BF61BF2905D00D980AF /* FileHandler.cpp */; };
-		BDD520A71BF3FFEB001A6223 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = BDD520A61BF3FFEB001A6223 /* Makefile */; };
+		BD94FE601BF422C000AC1C29 /* Exceptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD548BF31BF28F8600D980AF /* Exceptions.cpp */; };
+		BD94FE611BF422C600AC1C29 /* FileHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD548BF61BF2905D00D980AF /* FileHandler.cpp */; };
+		BD94FE621BF422CF00AC1C29 /* sndinfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD548BDC1BF2869400D980AF /* sndinfo.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,7 +26,6 @@
 
 /* Begin PBXFileReference section */
 		BD548BD21BF284FB00D980AF /* HW4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HW4; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD548BD51BF284FB00D980AF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		BD548BDC1BF2869400D980AF /* sndinfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sndinfo.cpp; sourceTree = "<group>"; };
 		BD548BDD1BF2869400D980AF /* sndinfo.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = sndinfo.hpp; sourceTree = "<group>"; };
 		BD548BE01BF286C200D980AF /* sndcat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sndcat.cpp; sourceTree = "<group>"; };
@@ -88,7 +79,6 @@
 			children = (
 				BD548BF21BF28F7200D980AF /* Util */,
 				BD548BDF1BF2869A00D980AF /* Programs */,
-				BD548BD51BF284FB00D980AF /* main.cpp */,
 			);
 			path = HW4;
 			sourceTree = "<group>";
@@ -182,17 +172,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD548BD61BF284FB00D980AF /* main.cpp in Sources */,
-				BD548BEB1BF28BD800D980AF /* sndcvt.cpp in Sources */,
-				BD548BE21BF286C200D980AF /* sndcat.cpp in Sources */,
-				BDD520A71BF3FFEB001A6223 /* Makefile in Sources */,
-				BD548BE81BF286D800D980AF /* sndgen.cpp in Sources */,
-				BD548BE51BF286CE00D980AF /* sndmix.cpp in Sources */,
-				BD548BF51BF28F8600D980AF /* Exceptions.cpp in Sources */,
-				BD548BF81BF2905D00D980AF /* FileHandler.cpp in Sources */,
-				BD548BEE1BF28CB000D980AF /* sndfx.cpp in Sources */,
-				BD548BDE1BF2869400D980AF /* sndinfo.cpp in Sources */,
-				BD548BF11BF28D6100D980AF /* sndplay.cpp in Sources */,
+				BD94FE611BF422C600AC1C29 /* FileHandler.cpp in Sources */,
+				BD94FE621BF422CF00AC1C29 /* sndinfo.cpp in Sources */,
+				BD94FE601BF422C000AC1C29 /* Exceptions.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

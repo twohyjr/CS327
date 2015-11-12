@@ -17,6 +17,8 @@
  Note that this is a real nice place to use a decorator pattern.
 */
 
+
+#include <iostream>
 #include <stdio.h>
 
 //TODO

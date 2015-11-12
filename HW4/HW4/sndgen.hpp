@@ -31,6 +31,7 @@
  16) --pf p : Fraction of the time the pulse wave is “up”
 */
 
+#include <iostream>
 #include <stdio.h>
 
 //TODO

@@ -1,6 +1,9 @@
 #include "sndplay.hpp"
 
+using namespace std;
+
 int main(int argc, const char * argv[]) {
-     
-     return 0;
+    
+    cout << "Running sndplay" << endl;
+    return 0;
 }

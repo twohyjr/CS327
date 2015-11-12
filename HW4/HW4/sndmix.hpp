@@ -13,7 +13,9 @@
  2) -o file : specify the output file name; if omitted, write to standard output.
  */
 
+#include <iostream>
 #include <stdio.h>
+
 
 //TODO
 
