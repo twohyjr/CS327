@@ -1,5 +1,7 @@
 #ifndef sndinfo_hpp
 #define sndinfo_hpp
+#include "ProgramObject.hpp"
+
 
 /* 
  (10 points)
@@ -15,11 +17,11 @@
  If no files are passed as arguments, then the program should read from standard input. The only required switch for this program is -h.
  */
 
-#include <stdio.h>
-#include <iostream>
 
-
-void PrintRunning();
-
+class sndinfo : public ProgramObject{
+public:
+    sndinfo(int numberOfFiles, const char *filenames[],string programName) : ProgramObject(numberOfFiles,filenames,programName){}
+    
+};
 
 #endif /* sndinfo_hpp */

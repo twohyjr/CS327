@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BD94FE601BF422C000AC1C29 /* Exceptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD548BF31BF28F8600D980AF /* Exceptions.cpp */; };
-		BD94FE611BF422C600AC1C29 /* FileHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD548BF61BF2905D00D980AF /* FileHandler.cpp */; };
-		BD94FE621BF422CF00AC1C29 /* sndinfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD548BDC1BF2869400D980AF /* sndinfo.cpp */; };
+		BD780D3D1BFAF21800647E66 /* WavFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD94FE931BFAD9CF00AC1C29 /* WavFile.cpp */; };
+		BD780D3E1BFAF21F00647E66 /* Cs229File.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD94FE871BF68AE200AC1C29 /* Cs229File.cpp */; };
+		BD780D3F1BFAF2E100647E66 /* sndinfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD548BDC1BF2869400D980AF /* sndinfo.cpp */; };
+		BD780D401BFAF2E400647E66 /* ProgramObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD94FE8D1BFAB66C00AC1C29 /* ProgramObject.cpp */; };
+		BD780D411BFAF2EA00647E66 /* SoundFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD94FE901BFAB91A00AC1C29 /* SoundFile.cpp */; };
+		BD780D441BFAFB2300647E66 /* ABC229File.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD780D421BFAFB2300647E66 /* ABC229File.cpp */; };
+		BD780D481BFBFF7800647E66 /* Instrument.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD780D461BFBFF7800647E66 /* Instrument.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,10 +44,23 @@
 		BD548BED1BF28CB000D980AF /* sndfx.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = sndfx.hpp; sourceTree = "<group>"; };
 		BD548BEF1BF28D6100D980AF /* sndplay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sndplay.cpp; sourceTree = "<group>"; };
 		BD548BF01BF28D6100D980AF /* sndplay.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = sndplay.hpp; sourceTree = "<group>"; };
-		BD548BF31BF28F8600D980AF /* Exceptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Exceptions.cpp; sourceTree = "<group>"; };
-		BD548BF41BF28F8600D980AF /* Exceptions.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Exceptions.hpp; sourceTree = "<group>"; };
-		BD548BF61BF2905D00D980AF /* FileHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileHandler.cpp; sourceTree = "<group>"; };
-		BD548BF71BF2905D00D980AF /* FileHandler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FileHandler.hpp; sourceTree = "<group>"; };
+		BD780D3A1BFAF05F00647E66 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		BD780D421BFAFB2300647E66 /* ABC229File.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ABC229File.cpp; sourceTree = "<group>"; };
+		BD780D431BFAFB2300647E66 /* ABC229File.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ABC229File.hpp; sourceTree = "<group>"; };
+		BD780D451BFBF62B00647E66 /* AnotherCs229File.cs229 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AnotherCs229File.cs229; sourceTree = "<group>"; };
+		BD780D461BFBFF7800647E66 /* Instrument.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Instrument.cpp; sourceTree = "<group>"; };
+		BD780D471BFBFF7800647E66 /* Instrument.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Instrument.hpp; sourceTree = "<group>"; };
+		BD94FE841BF6873200AC1C29 /* TestSound.cs229 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TestSound.cs229; sourceTree = "<group>"; };
+		BD94FE871BF68AE200AC1C29 /* Cs229File.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Cs229File.cpp; sourceTree = "<group>"; };
+		BD94FE881BF68AE200AC1C29 /* Cs229File.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Cs229File.hpp; sourceTree = "<group>"; };
+		BD94FE8B1BFA83E700AC1C29 /* MyWavFile.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = MyWavFile.wav; sourceTree = "<group>"; };
+		BD94FE8C1BFA86B500AC1C29 /* MyAbcFile.ABC229 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = MyAbcFile.ABC229; path = HW4/MyAbcFile.ABC229; sourceTree = "<group>"; };
+		BD94FE8D1BFAB66C00AC1C29 /* ProgramObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ProgramObject.cpp; sourceTree = "<group>"; };
+		BD94FE8E1BFAB66C00AC1C29 /* ProgramObject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ProgramObject.hpp; sourceTree = "<group>"; };
+		BD94FE901BFAB91A00AC1C29 /* SoundFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SoundFile.cpp; sourceTree = "<group>"; };
+		BD94FE911BFAB91B00AC1C29 /* SoundFile.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SoundFile.hpp; sourceTree = "<group>"; };
+		BD94FE931BFAD9CF00AC1C29 /* WavFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WavFile.cpp; sourceTree = "<group>"; };
+		BD94FE941BFAD9CF00AC1C29 /* WavFile.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = WavFile.hpp; sourceTree = "<group>"; };
 		BDD520A61BF3FFEB001A6223 /* Makefile */ = {isa = PBXFileReference; explicitFileType = sourcecode.make; fileEncoding = 4; path = Makefile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,8 +78,13 @@
 		BD548BC91BF284FB00D980AF = {
 			isa = PBXGroup;
 			children = (
+				BD780D3A1BFAF05F00647E66 /* main.cpp */,
 				BD548BD41BF284FB00D980AF /* HW4 */,
 				BD548BD31BF284FB00D980AF /* Products */,
+				BD94FE841BF6873200AC1C29 /* TestSound.cs229 */,
+				BD780D451BFBF62B00647E66 /* AnotherCs229File.cs229 */,
+				BD94FE8B1BFA83E700AC1C29 /* MyWavFile.wav */,
+				BD94FE8C1BFA86B500AC1C29 /* MyAbcFile.ABC229 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,7 +99,8 @@
 		BD548BD41BF284FB00D980AF /* HW4 */ = {
 			isa = PBXGroup;
 			children = (
-				BD548BF21BF28F7200D980AF /* Util */,
+				BD94FE8A1BF68AEA00AC1C29 /* FileTypes */,
+				BD548BF21BF28F7200D980AF /* Objects */,
 				BD548BDF1BF2869A00D980AF /* Programs */,
 			);
 			path = HW4;
@@ -105,15 +128,30 @@
 			name = Programs;
 			sourceTree = "<group>";
 		};
-		BD548BF21BF28F7200D980AF /* Util */ = {
+		BD548BF21BF28F7200D980AF /* Objects */ = {
 			isa = PBXGroup;
 			children = (
-				BD548BF31BF28F8600D980AF /* Exceptions.cpp */,
-				BD548BF41BF28F8600D980AF /* Exceptions.hpp */,
-				BD548BF61BF2905D00D980AF /* FileHandler.cpp */,
-				BD548BF71BF2905D00D980AF /* FileHandler.hpp */,
+				BD94FE8D1BFAB66C00AC1C29 /* ProgramObject.cpp */,
+				BD94FE8E1BFAB66C00AC1C29 /* ProgramObject.hpp */,
+				BD94FE901BFAB91A00AC1C29 /* SoundFile.cpp */,
+				BD94FE911BFAB91B00AC1C29 /* SoundFile.hpp */,
+				BD780D461BFBFF7800647E66 /* Instrument.cpp */,
+				BD780D471BFBFF7800647E66 /* Instrument.hpp */,
 			);
-			name = Util;
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		BD94FE8A1BF68AEA00AC1C29 /* FileTypes */ = {
+			isa = PBXGroup;
+			children = (
+				BD94FE871BF68AE200AC1C29 /* Cs229File.cpp */,
+				BD94FE881BF68AE200AC1C29 /* Cs229File.hpp */,
+				BD94FE931BFAD9CF00AC1C29 /* WavFile.cpp */,
+				BD94FE941BFAD9CF00AC1C29 /* WavFile.hpp */,
+				BD780D421BFAFB2300647E66 /* ABC229File.cpp */,
+				BD780D431BFAFB2300647E66 /* ABC229File.hpp */,
+			);
+			name = FileTypes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,9 +210,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD94FE611BF422C600AC1C29 /* FileHandler.cpp in Sources */,
-				BD94FE621BF422CF00AC1C29 /* sndinfo.cpp in Sources */,
-				BD94FE601BF422C000AC1C29 /* Exceptions.cpp in Sources */,
+				BD780D441BFAFB2300647E66 /* ABC229File.cpp in Sources */,
+				BD780D481BFBFF7800647E66 /* Instrument.cpp in Sources */,
+				BD780D3E1BFAF21F00647E66 /* Cs229File.cpp in Sources */,
+				BD780D411BFAF2EA00647E66 /* SoundFile.cpp in Sources */,
+				BD780D3F1BFAF2E100647E66 /* sndinfo.cpp in Sources */,
+				BD780D3D1BFAF21800647E66 /* WavFile.cpp in Sources */,
+				BD780D401BFAF2E400647E66 /* ProgramObject.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
