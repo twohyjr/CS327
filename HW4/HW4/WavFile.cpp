@@ -3,7 +3,7 @@
 
 void WavFile::getDataFromFile(){
     
-    display();
+    //display();
 }
 
 void WavFile::display(){

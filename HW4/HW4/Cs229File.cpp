@@ -34,7 +34,7 @@ void Cs229File::getDataFromFile(){
         exit(0);
     }
     
-    display();
+    //display();
 }
 
 void Cs229File::display(){

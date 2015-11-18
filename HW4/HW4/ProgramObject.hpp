@@ -11,6 +11,13 @@
 
 using namespace std;
 
+/*
+ 	This class is used as an interface for my main program object.  Its job is to create an array of files with an array of
+ 	filenames given in the parameters. 
+ 	
+ 	If the parameters are empty it will instruct the user to input files.
+ */
+
 class ProgramObject{
     
 public: //Constructors

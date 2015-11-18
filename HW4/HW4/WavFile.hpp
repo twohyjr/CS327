@@ -13,8 +13,8 @@ public:
     void getDataFromFile();
     void display();
 private:
-    string filename;
-    string fileType;
+    string filename = "";
+    string fileType = "";
 };
 
 

@@ -99,6 +99,7 @@
 		BD548BD41BF284FB00D980AF /* HW4 */ = {
 			isa = PBXGroup;
 			children = (
+				BD780D491BFC043F00647E66 /* IntrumentTypes */,
 				BD94FE8A1BF68AEA00AC1C29 /* FileTypes */,
 				BD548BF21BF28F7200D980AF /* Objects */,
 				BD548BDF1BF2869A00D980AF /* Programs */,
@@ -139,6 +140,13 @@
 				BD780D471BFBFF7800647E66 /* Instrument.hpp */,
 			);
 			name = Objects;
+			sourceTree = "<group>";
+		};
+		BD780D491BFC043F00647E66 /* IntrumentTypes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = IntrumentTypes;
 			sourceTree = "<group>";
 		};
 		BD94FE8A1BF68AEA00AC1C29 /* FileTypes */ = {
