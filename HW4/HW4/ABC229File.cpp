@@ -1,51 +1,56 @@
-#include "ABC229File.hpp"
+#include "ABC229File.h"
 
 
 void ABC229File::getDataFromFile(){
     instruments = new Instrument*[10];
+    StringConversion strCon;
     int instrumentCount = 0;
-    string line;
-    ifstream myfile (filename);
+    std::string line;
+    std::ifstream myfile (filename.c_str());
+    
+    if(myfile.peek() == std::ifstream::traits_type::eof()){
+        cout << "Not A Valid File" << endl;
+        exit(-1);
+    }
     if (myfile.is_open()){
-        string word;
+        std::string word;
         while (getline (myfile,line)){
             if(line[0] != '%'){
-                istringstream iss(line);
+                std::istringstream iss(line);
                 while(iss >> word) {
                     transform(word.begin(), word.end(), word.begin(), ::tolower);
                     if (word.compare("tempo") == 0){
                         iss >> word;
-                        tempo = stof(word);
+                        tempo = strCon.getIntFromString(word);
                     }else if(word.compare("instrument") == 0){//<-----This is where I create instruments
                         iss >> word;
                         instruments[instrumentCount] = new Instrument();
-                        if(instrumentCount != stoi(word)){
+                        if(instrumentCount != strCon.getIntFromString(word)){
                             cout << "Instrument Number Is Out Of Count!" << endl;
-                            exit(0);
                         }
                         instruments[instrumentCount]->instrumentNumber = instrumentCount;
                         while (getline(myfile, line)) {
-                            istringstream iss2(line);
+                            std::istringstream iss2(line);
                             iss2 >> line;
-                            transform(line.begin(), line.end(), line.begin(), ::tolower);
+                            std::transform(line.begin(), line.end(), line.begin(), ::tolower);
                             if(line.compare("waveform") == 0){
                                 iss2 >> line;
                                 instruments[instrumentCount]->waveform = line;
                             }else if(line.compare("volume") == 0){
                                 iss2 >> line;
-                                instruments[instrumentCount]->volume = stod(line);
+                                instruments[instrumentCount]->volume = strCon.getFloatFromString(line);
                             }else if(line.compare("attack") == 0){
                                 iss2 >> line;
-                                instruments[instrumentCount]->attack= stod(line);
+                                instruments[instrumentCount]->attack= strCon.getFloatFromString(line);
                             }else if(line.compare("decay") == 0){
                                 iss2 >> line;
-                                instruments[instrumentCount]->decay = stod(line);
+                                instruments[instrumentCount]->decay = strCon.getFloatFromString(line);
                             }else if(line.compare("sustain") == 0){
                                 iss2 >> line;
-                                instruments[instrumentCount]->sustain = stod(line);
+                                instruments[instrumentCount]->sustain = strCon.getFloatFromString(line);
                             }else if(line.compare("release") == 0){
                                 iss2 >> line;
-                                instruments[instrumentCount]->release = stod(line);
+                                instruments[instrumentCount]->release = strCon.getFloatFromString(line);
                             }else if(
                             	line.compare("score") == 0){
                                 iss2 >> line;
@@ -64,9 +69,8 @@ void ABC229File::getDataFromFile(){
         myfile.close();
     }else{
         cout << "Unable to open file\n";
-        exit(0);
     }
-    //display();
+	//display();
 }
 
 

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BD548BD11BF284FB00D980AF"
+               BlueprintIdentifier = "BDD6AC021C0248F100728065"
                BuildableName = "HW4"
                BlueprintName = "HW4"
                ReferencedContainer = "container:HW4.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BD548BD11BF284FB00D980AF"
+            BlueprintIdentifier = "BDD6AC021C0248F100728065"
             BuildableName = "HW4"
             BlueprintName = "HW4"
             ReferencedContainer = "container:HW4.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BD548BD11BF284FB00D980AF"
+            BlueprintIdentifier = "BDD6AC021C0248F100728065"
             BuildableName = "HW4"
             BlueprintName = "HW4"
             ReferencedContainer = "container:HW4.xcodeproj">
@@ -63,20 +63,20 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "/Users/twohyjr/Documents/School/Fall2015/CS327/HW4/TestSound.cs229"
+            argument = "/Users/twohyjr/Desktop/HW4/MyWavFile.wav"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "/Users/twohyjr/Desktop/HW4/TestSound.cs229"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "/Users/twohyjr/Documents/School/Fall2015/CS327/HW4/HW4/MyAbcFile.ABC229"
-            isEnabled = "YES">
+            argument = "/Users/twohyjr/Desktop/HW4/MyAbcFile.ABC229"
+            isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "/Users/twohyjr/Documents/School/Fall2015/CS327/HW4/MyWavFile.wav"
-            isEnabled = "YES">
-         </CommandLineArgument>
-         <CommandLineArgument
-            argument = "/Users/twohyjr/Documents/School/Fall2015/CS327/HW4/AnotherCs229File.cs229"
-            isEnabled = "YES">
+            argument = "-h"
+            isEnabled = "NO">
          </CommandLineArgument>
       </CommandLineArguments>
       <AdditionalOptions>
@@ -92,7 +92,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BD548BD11BF284FB00D980AF"
+            BlueprintIdentifier = "BDD6AC021C0248F100728065"
             BuildableName = "HW4"
             BlueprintName = "HW4"
             ReferencedContainer = "container:HW4.xcodeproj">

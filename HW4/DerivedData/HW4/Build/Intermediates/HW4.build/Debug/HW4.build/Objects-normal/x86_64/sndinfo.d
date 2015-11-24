@@ -1,9 +1,10 @@
-dependencies: \
-  /Users/twohyjr/Documents/School/Fall2015/CS327/HW4/HW4/sndinfo.cpp \
-  /Users/twohyjr/Documents/School/Fall2015/CS327/HW4/HW4/sndinfo.hpp \
-  /Users/twohyjr/Documents/School/Fall2015/CS327/HW4/HW4/ProgramObject.hpp \
-  /Users/twohyjr/Documents/School/Fall2015/CS327/HW4/HW4/SoundFile.hpp \
-  /Users/twohyjr/Documents/School/Fall2015/CS327/HW4/HW4/Cs229File.hpp \
-  /Users/twohyjr/Documents/School/Fall2015/CS327/HW4/HW4/WavFile.hpp \
-  /Users/twohyjr/Documents/School/Fall2015/CS327/HW4/HW4/ABC229File.hpp \
-  /Users/twohyjr/Documents/School/Fall2015/CS327/HW4/HW4/Instrument.hpp
+dependencies: /Users/twohyjr/Desktop/HW4/HW4/sndinfo.cpp \
+  /Users/twohyjr/Desktop/HW4/HW4/sndinfo.h \
+  /Users/twohyjr/Desktop/HW4/HW4/ProgramObject.h \
+  /Users/twohyjr/Desktop/HW4/HW4/SoundFile.h \
+  /Users/twohyjr/Desktop/HW4/HW4/StringConversion.h \
+  /Users/twohyjr/Desktop/HW4/HW4/Cs229File.h \
+  /Users/twohyjr/Desktop/HW4/HW4/Sample.h \
+  /Users/twohyjr/Desktop/HW4/HW4/WavFile.h \
+  /Users/twohyjr/Desktop/HW4/HW4/ABC229File.h \
+  /Users/twohyjr/Desktop/HW4/HW4/Instrument.h

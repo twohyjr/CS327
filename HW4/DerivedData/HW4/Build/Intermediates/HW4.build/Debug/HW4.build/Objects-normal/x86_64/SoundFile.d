@@ -1,3 +1,3 @@
-dependencies: \
-  /Users/twohyjr/Documents/School/Fall2015/CS327/HW4/HW4/SoundFile.cpp \
-  /Users/twohyjr/Documents/School/Fall2015/CS327/HW4/HW4/SoundFile.hpp
+dependencies: /Users/twohyjr/Desktop/HW4/HW4/SoundFile.cpp \
+  /Users/twohyjr/Desktop/HW4/HW4/SoundFile.h \
+  /Users/twohyjr/Desktop/HW4/HW4/StringConversion.h

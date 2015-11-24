@@ -1,4 +1,4 @@
-#include "WavFile.hpp"
+#include "WavFile.h"
 
 
 void WavFile::getDataFromFile(){
