@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BD94FE601BF422C000AC1C29 /* Exceptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD548BF31BF28F8600D980AF /* Exceptions.cpp */; };
-		BD94FE611BF422C600AC1C29 /* FileHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD548BF61BF2905D00D980AF /* FileHandler.cpp */; };
-		BD94FE621BF422CF00AC1C29 /* sndinfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD548BDC1BF2869400D980AF /* sndinfo.cpp */; };
+		BDD6AC151C024CCC00728065 /* ProgramObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDD6AC131C024CCC00728065 /* ProgramObject.cpp */; };
+		BDD6AC181C025C0000728065 /* SoundFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDD6AC161C025C0000728065 /* SoundFile.cpp */; };
+		BDD6AC191C025CBB00728065 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = BDD6AC0D1C02495800728065 /* Makefile */; };
+		BDD6AC201C025E7E00728065 /* Cs229File.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDD6AC1A1C025E7E00728065 /* Cs229File.cpp */; };
+		BDD6AC211C025E7E00728065 /* WavFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDD6AC1C1C025E7E00728065 /* WavFile.cpp */; };
+		BDD6AC221C025E7E00728065 /* ABC229File.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDD6AC1E1C025E7E00728065 /* ABC229File.cpp */; };
+		BDD6AC251C02600E00728065 /* Instrument.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDD6AC231C02600E00728065 /* Instrument.cpp */; };
+		BDD6AC311C02805F00728065 /* StringConversion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDD6AC301C02805F00728065 /* StringConversion.cpp */; };
+		BDD6AC511C03B12100728065 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = BDD6AC4F1C03B12100728065 /* README.md */; };
+		BDD6AC551C03B53300728065 /* Sample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDD6AC531C03B53300728065 /* Sample.cpp */; };
+		BDD6AC5E1C041DF200728065 /* sndinfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDD6AC061C0248F100728065 /* sndinfo.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		BD548BD01BF284FB00D980AF /* CopyFiles */ = {
+		BDD6AC011C0248F100728065 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,30 +33,48 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		BD548BD21BF284FB00D980AF /* HW4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HW4; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD548BDC1BF2869400D980AF /* sndinfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sndinfo.cpp; sourceTree = "<group>"; };
-		BD548BDD1BF2869400D980AF /* sndinfo.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = sndinfo.hpp; sourceTree = "<group>"; };
-		BD548BE01BF286C200D980AF /* sndcat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sndcat.cpp; sourceTree = "<group>"; };
-		BD548BE11BF286C200D980AF /* sndcat.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = sndcat.hpp; sourceTree = "<group>"; };
-		BD548BE31BF286CE00D980AF /* sndmix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sndmix.cpp; sourceTree = "<group>"; };
-		BD548BE41BF286CE00D980AF /* sndmix.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = sndmix.hpp; sourceTree = "<group>"; };
-		BD548BE61BF286D800D980AF /* sndgen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sndgen.cpp; sourceTree = "<group>"; };
-		BD548BE71BF286D800D980AF /* sndgen.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = sndgen.hpp; sourceTree = "<group>"; };
-		BD548BE91BF28BD800D980AF /* sndcvt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sndcvt.cpp; sourceTree = "<group>"; };
-		BD548BEA1BF28BD800D980AF /* sndcvt.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = sndcvt.hpp; sourceTree = "<group>"; };
-		BD548BEC1BF28CB000D980AF /* sndfx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sndfx.cpp; sourceTree = "<group>"; };
-		BD548BED1BF28CB000D980AF /* sndfx.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = sndfx.hpp; sourceTree = "<group>"; };
-		BD548BEF1BF28D6100D980AF /* sndplay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sndplay.cpp; sourceTree = "<group>"; };
-		BD548BF01BF28D6100D980AF /* sndplay.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = sndplay.hpp; sourceTree = "<group>"; };
-		BD548BF31BF28F8600D980AF /* Exceptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Exceptions.cpp; sourceTree = "<group>"; };
-		BD548BF41BF28F8600D980AF /* Exceptions.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Exceptions.hpp; sourceTree = "<group>"; };
-		BD548BF61BF2905D00D980AF /* FileHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileHandler.cpp; sourceTree = "<group>"; };
-		BD548BF71BF2905D00D980AF /* FileHandler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FileHandler.hpp; sourceTree = "<group>"; };
-		BDD520A61BF3FFEB001A6223 /* Makefile */ = {isa = PBXFileReference; explicitFileType = sourcecode.make; fileEncoding = 4; path = Makefile; sourceTree = "<group>"; };
+		BDD6AC031C0248F100728065 /* HW4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HW4; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDD6AC061C0248F100728065 /* sndinfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = sndinfo.cpp; sourceTree = "<group>"; };
+		BDD6AC0D1C02495800728065 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; name = Makefile; path = HW4/Makefile; sourceTree = "<group>"; };
+		BDD6AC0F1C0249A400728065 /* sndinfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sndinfo.h; sourceTree = "<group>"; };
+		BDD6AC131C024CCC00728065 /* ProgramObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ProgramObject.cpp; sourceTree = "<group>"; };
+		BDD6AC141C024CCC00728065 /* ProgramObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgramObject.h; sourceTree = "<group>"; };
+		BDD6AC161C025C0000728065 /* SoundFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SoundFile.cpp; sourceTree = "<group>"; };
+		BDD6AC171C025C0000728065 /* SoundFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundFile.h; sourceTree = "<group>"; };
+		BDD6AC1A1C025E7E00728065 /* Cs229File.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Cs229File.cpp; sourceTree = "<group>"; };
+		BDD6AC1B1C025E7E00728065 /* Cs229File.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cs229File.h; sourceTree = "<group>"; };
+		BDD6AC1C1C025E7E00728065 /* WavFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WavFile.cpp; sourceTree = "<group>"; };
+		BDD6AC1D1C025E7E00728065 /* WavFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WavFile.h; sourceTree = "<group>"; };
+		BDD6AC1E1C025E7E00728065 /* ABC229File.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ABC229File.cpp; sourceTree = "<group>"; };
+		BDD6AC1F1C025E7E00728065 /* ABC229File.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABC229File.h; sourceTree = "<group>"; };
+		BDD6AC231C02600E00728065 /* Instrument.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Instrument.cpp; sourceTree = "<group>"; };
+		BDD6AC241C02600E00728065 /* Instrument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Instrument.h; sourceTree = "<group>"; };
+		BDD6AC2E1C02802D00728065 /* StringConversion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringConversion.h; sourceTree = "<group>"; };
+		BDD6AC301C02805F00728065 /* StringConversion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringConversion.cpp; sourceTree = "<group>"; };
+		BDD6AC331C03AF5300728065 /* sndcat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sndcat.cpp; sourceTree = "<group>"; };
+		BDD6AC341C03AF5300728065 /* sndcat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sndcat.h; sourceTree = "<group>"; };
+		BDD6AC351C03AF5300728065 /* sndmix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sndmix.cpp; sourceTree = "<group>"; };
+		BDD6AC361C03AF5300728065 /* sndmix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sndmix.h; sourceTree = "<group>"; };
+		BDD6AC371C03AF5300728065 /* sndgen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sndgen.cpp; sourceTree = "<group>"; };
+		BDD6AC381C03AF5300728065 /* sndgen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sndgen.h; sourceTree = "<group>"; };
+		BDD6AC391C03AF5300728065 /* sndcvt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sndcvt.cpp; sourceTree = "<group>"; };
+		BDD6AC3A1C03AF5300728065 /* sndcvt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sndcvt.h; sourceTree = "<group>"; };
+		BDD6AC3B1C03AF5300728065 /* sndfx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sndfx.cpp; sourceTree = "<group>"; };
+		BDD6AC3C1C03AF5300728065 /* sndfx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sndfx.h; sourceTree = "<group>"; };
+		BDD6AC3D1C03AF5300728065 /* sndplay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sndplay.cpp; sourceTree = "<group>"; };
+		BDD6AC3E1C03AF5300728065 /* sndplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sndplay.h; sourceTree = "<group>"; };
+		BDD6AC4D1C03B12100728065 /* AnotherCs229File.cs229 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AnotherCs229File.cs229; sourceTree = "<group>"; };
+		BDD6AC4E1C03B12100728065 /* MyWavFile.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = MyWavFile.wav; sourceTree = "<group>"; };
+		BDD6AC4F1C03B12100728065 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BDD6AC501C03B12100728065 /* TestSound.cs229 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TestSound.cs229; sourceTree = "<group>"; };
+		BDD6AC521C03B24200728065 /* MyAbcFile.ABC229 */ = {isa = PBXFileReference; lastKnownFileType = text; path = MyAbcFile.ABC229; sourceTree = "<group>"; };
+		BDD6AC531C03B53300728065 /* Sample.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sample.cpp; sourceTree = "<group>"; };
+		BDD6AC541C03B53300728065 /* Sample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sample.h; sourceTree = "<group>"; };
+		BDD6AC561C03C0FF00728065 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BD548BCF1BF284FB00D980AF /* Frameworks */ = {
+		BDD6AC001C0248F100728065 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -58,60 +84,94 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BD548BC91BF284FB00D980AF = {
+		BDD6ABFA1C0248F100728065 = {
 			isa = PBXGroup;
 			children = (
-				BD548BD41BF284FB00D980AF /* HW4 */,
-				BD548BD31BF284FB00D980AF /* Products */,
+				BDD6AC051C0248F100728065 /* HW4 */,
+				BDD6AC041C0248F100728065 /* Products */,
+				BDD6AC521C03B24200728065 /* MyAbcFile.ABC229 */,
+				BDD6AC0D1C02495800728065 /* Makefile */,
+				BDD6AC4D1C03B12100728065 /* AnotherCs229File.cs229 */,
+				BDD6AC4E1C03B12100728065 /* MyWavFile.wav */,
+				BDD6AC4F1C03B12100728065 /* README.md */,
+				BDD6AC501C03B12100728065 /* TestSound.cs229 */,
 			);
 			sourceTree = "<group>";
 		};
-		BD548BD31BF284FB00D980AF /* Products */ = {
+		BDD6AC041C0248F100728065 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BD548BD21BF284FB00D980AF /* HW4 */,
+				BDD6AC031C0248F100728065 /* HW4 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BD548BD41BF284FB00D980AF /* HW4 */ = {
+		BDD6AC051C0248F100728065 /* HW4 */ = {
 			isa = PBXGroup;
 			children = (
-				BD548BF21BF28F7200D980AF /* Util */,
-				BD548BDF1BF2869A00D980AF /* Programs */,
+				BDD6AC561C03C0FF00728065 /* main.cpp */,
+				BDD6AC111C024CAA00728065 /* FileTypes */,
+				BDD6AC101C024C6900728065 /* Objects */,
+				BDD6AC2C1C02762700728065 /* Util */,
+				BDD6AC121C024CB400728065 /* Programs */,
 			);
 			path = HW4;
 			sourceTree = "<group>";
 		};
-		BD548BDF1BF2869A00D980AF /* Programs */ = {
+		BDD6AC101C024C6900728065 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
-				BD548BDC1BF2869400D980AF /* sndinfo.cpp */,
-				BD548BDD1BF2869400D980AF /* sndinfo.hpp */,
-				BD548BE01BF286C200D980AF /* sndcat.cpp */,
-				BD548BE11BF286C200D980AF /* sndcat.hpp */,
-				BD548BE31BF286CE00D980AF /* sndmix.cpp */,
-				BD548BE41BF286CE00D980AF /* sndmix.hpp */,
-				BD548BE61BF286D800D980AF /* sndgen.cpp */,
-				BD548BE71BF286D800D980AF /* sndgen.hpp */,
-				BD548BE91BF28BD800D980AF /* sndcvt.cpp */,
-				BD548BEA1BF28BD800D980AF /* sndcvt.hpp */,
-				BD548BEC1BF28CB000D980AF /* sndfx.cpp */,
-				BD548BED1BF28CB000D980AF /* sndfx.hpp */,
-				BD548BEF1BF28D6100D980AF /* sndplay.cpp */,
-				BD548BF01BF28D6100D980AF /* sndplay.hpp */,
-				BDD520A61BF3FFEB001A6223 /* Makefile */,
+				BDD6AC131C024CCC00728065 /* ProgramObject.cpp */,
+				BDD6AC141C024CCC00728065 /* ProgramObject.h */,
+				BDD6AC161C025C0000728065 /* SoundFile.cpp */,
+				BDD6AC171C025C0000728065 /* SoundFile.h */,
+				BDD6AC231C02600E00728065 /* Instrument.cpp */,
+				BDD6AC241C02600E00728065 /* Instrument.h */,
+				BDD6AC531C03B53300728065 /* Sample.cpp */,
+				BDD6AC541C03B53300728065 /* Sample.h */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		BDD6AC111C024CAA00728065 /* FileTypes */ = {
+			isa = PBXGroup;
+			children = (
+				BDD6AC1A1C025E7E00728065 /* Cs229File.cpp */,
+				BDD6AC1B1C025E7E00728065 /* Cs229File.h */,
+				BDD6AC1C1C025E7E00728065 /* WavFile.cpp */,
+				BDD6AC1D1C025E7E00728065 /* WavFile.h */,
+				BDD6AC1E1C025E7E00728065 /* ABC229File.cpp */,
+				BDD6AC1F1C025E7E00728065 /* ABC229File.h */,
+			);
+			name = FileTypes;
+			sourceTree = "<group>";
+		};
+		BDD6AC121C024CB400728065 /* Programs */ = {
+			isa = PBXGroup;
+			children = (
+				BDD6AC061C0248F100728065 /* sndinfo.cpp */,
+				BDD6AC0F1C0249A400728065 /* sndinfo.h */,
+				BDD6AC331C03AF5300728065 /* sndcat.cpp */,
+				BDD6AC341C03AF5300728065 /* sndcat.h */,
+				BDD6AC351C03AF5300728065 /* sndmix.cpp */,
+				BDD6AC361C03AF5300728065 /* sndmix.h */,
+				BDD6AC371C03AF5300728065 /* sndgen.cpp */,
+				BDD6AC381C03AF5300728065 /* sndgen.h */,
+				BDD6AC391C03AF5300728065 /* sndcvt.cpp */,
+				BDD6AC3A1C03AF5300728065 /* sndcvt.h */,
+				BDD6AC3B1C03AF5300728065 /* sndfx.cpp */,
+				BDD6AC3C1C03AF5300728065 /* sndfx.h */,
+				BDD6AC3D1C03AF5300728065 /* sndplay.cpp */,
+				BDD6AC3E1C03AF5300728065 /* sndplay.h */,
 			);
 			name = Programs;
 			sourceTree = "<group>";
 		};
-		BD548BF21BF28F7200D980AF /* Util */ = {
+		BDD6AC2C1C02762700728065 /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				BD548BF31BF28F8600D980AF /* Exceptions.cpp */,
-				BD548BF41BF28F8600D980AF /* Exceptions.hpp */,
-				BD548BF61BF2905D00D980AF /* FileHandler.cpp */,
-				BD548BF71BF2905D00D980AF /* FileHandler.hpp */,
+				BDD6AC301C02805F00728065 /* StringConversion.cpp */,
+				BDD6AC2E1C02802D00728065 /* StringConversion.h */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -119,13 +179,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BD548BD11BF284FB00D980AF /* HW4 */ = {
+		BDD6AC021C0248F100728065 /* HW4 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BD548BD91BF284FB00D980AF /* Build configuration list for PBXNativeTarget "HW4" */;
+			buildConfigurationList = BDD6AC0A1C0248F100728065 /* Build configuration list for PBXNativeTarget "HW4" */;
 			buildPhases = (
-				BD548BCE1BF284FB00D980AF /* Sources */,
-				BD548BCF1BF284FB00D980AF /* Frameworks */,
-				BD548BD01BF284FB00D980AF /* CopyFiles */,
+				BDD6ABFF1C0248F100728065 /* Sources */,
+				BDD6AC001C0248F100728065 /* Frameworks */,
+				BDD6AC011C0248F100728065 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -133,55 +193,63 @@
 			);
 			name = HW4;
 			productName = HW4;
-			productReference = BD548BD21BF284FB00D980AF /* HW4 */;
+			productReference = BDD6AC031C0248F100728065 /* HW4 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		BD548BCA1BF284FB00D980AF /* Project object */ = {
+		BDD6ABFB1C0248F100728065 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Rick Twohy Jr";
 				TargetAttributes = {
-					BD548BD11BF284FB00D980AF = {
+					BDD6AC021C0248F100728065 = {
 						CreatedOnToolsVersion = 7.1;
 					};
 				};
 			};
-			buildConfigurationList = BD548BCD1BF284FB00D980AF /* Build configuration list for PBXProject "HW4" */;
+			buildConfigurationList = BDD6ABFE1C0248F100728065 /* Build configuration list for PBXProject "HW4" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = BD548BC91BF284FB00D980AF;
-			productRefGroup = BD548BD31BF284FB00D980AF /* Products */;
+			mainGroup = BDD6ABFA1C0248F100728065;
+			productRefGroup = BDD6AC041C0248F100728065 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BD548BD11BF284FB00D980AF /* HW4 */,
+				BDD6AC021C0248F100728065 /* HW4 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		BD548BCE1BF284FB00D980AF /* Sources */ = {
+		BDD6ABFF1C0248F100728065 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD94FE611BF422C600AC1C29 /* FileHandler.cpp in Sources */,
-				BD94FE621BF422CF00AC1C29 /* sndinfo.cpp in Sources */,
-				BD94FE601BF422C000AC1C29 /* Exceptions.cpp in Sources */,
+				BDD6AC251C02600E00728065 /* Instrument.cpp in Sources */,
+				BDD6AC5E1C041DF200728065 /* sndinfo.cpp in Sources */,
+				BDD6AC201C025E7E00728065 /* Cs229File.cpp in Sources */,
+				BDD6AC511C03B12100728065 /* README.md in Sources */,
+				BDD6AC221C025E7E00728065 /* ABC229File.cpp in Sources */,
+				BDD6AC151C024CCC00728065 /* ProgramObject.cpp in Sources */,
+				BDD6AC211C025E7E00728065 /* WavFile.cpp in Sources */,
+				BDD6AC191C025CBB00728065 /* Makefile in Sources */,
+				BDD6AC311C02805F00728065 /* StringConversion.cpp in Sources */,
+				BDD6AC181C025C0000728065 /* SoundFile.cpp in Sources */,
+				BDD6AC551C03B53300728065 /* Sample.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		BD548BD71BF284FB00D980AF /* Debug */ = {
+		BDD6AC081C0248F100728065 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -224,7 +292,7 @@
 			};
 			name = Debug;
 		};
-		BD548BD81BF284FB00D980AF /* Release */ = {
+		BDD6AC091C0248F100728065 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -260,14 +328,14 @@
 			};
 			name = Release;
 		};
-		BD548BDA1BF284FB00D980AF /* Debug */ = {
+		BDD6AC0B1C0248F100728065 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		BD548BDB1BF284FB00D980AF /* Release */ = {
+		BDD6AC0C1C0248F100728065 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -277,25 +345,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BD548BCD1BF284FB00D980AF /* Build configuration list for PBXProject "HW4" */ = {
+		BDD6ABFE1C0248F100728065 /* Build configuration list for PBXProject "HW4" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BD548BD71BF284FB00D980AF /* Debug */,
-				BD548BD81BF284FB00D980AF /* Release */,
+				BDD6AC081C0248F100728065 /* Debug */,
+				BDD6AC091C0248F100728065 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BD548BD91BF284FB00D980AF /* Build configuration list for PBXNativeTarget "HW4" */ = {
+		BDD6AC0A1C0248F100728065 /* Build configuration list for PBXNativeTarget "HW4" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BD548BDA1BF284FB00D980AF /* Debug */,
-				BD548BDB1BF284FB00D980AF /* Release */,
+				BDD6AC0B1C0248F100728065 /* Debug */,
+				BDD6AC0C1C0248F100728065 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = BD548BCA1BF284FB00D980AF /* Project object */;
+	rootObject = BDD6ABFB1C0248F100728065 /* Project object */;
 }

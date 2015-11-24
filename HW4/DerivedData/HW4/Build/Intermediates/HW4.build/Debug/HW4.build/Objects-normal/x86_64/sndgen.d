@@ -1,3 +1,2 @@
-dependencies: \
-  /Users/twohyjr/Documents/School/Fall\ 2015/CS327/HW4/HW4/sndgen.cpp \
-  /Users/twohyjr/Documents/School/Fall\ 2015/CS327/HW4/HW4/sndgen.hpp
+dependencies: /Users/twohyjr/Desktop/HW4/HW4/sndgen.cpp \
+  /Users/twohyjr/Desktop/HW4/HW4/sndgen.hpp
