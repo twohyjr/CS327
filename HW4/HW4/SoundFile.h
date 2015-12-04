@@ -15,7 +15,7 @@ using namespace std;
 class SoundFile {
 public:
     virtual void getDataFromFile() = 0;
-    virtual void display() = 0;
+    virtual std::string getDisplay() = 0;
 };
 
 #endif

@@ -1,14 +1,30 @@
-OBJS = sndinfo.o ProgramObject.o SoundFile.o Cs229File.o WavFile.o ABC229File.o StringConversion.o Instrument.o Sample.o
+OBJSCAT = sndcat.o ProgramObject.o SoundFile.o Cs229File.o WavFile.o ABC229File.o StringConversion.o Instrument.o Sample.o
+OBJSINFO = sndinfo.o ProgramObject.o SoundFile.o Cs229File.o WavFile.o ABC229File.o StringConversion.o Instrument.o Sample.o
+OBJSMIX = sndmix.o ProgramObject.o SoundFile.o Cs229File.o WavFile.o ABC229File.o StringConversion.o Instrument.o Sample.o
 CC = g++
 DEBUG = -g
-CFLAGS = -Wall -c $(DEBUG)
-LFLAGS = -Wall $(DEBUG)
+CFLAGS = -pedantic -c $(DEBUG)
+LFLAGS = -pedantic $(DEBUG)
 
-sndinfo : $(OBJS)
-	$(CC) $(LFLAGS) $(OBJS) -o sndinfo
+All: sndinfo sndcat sndmix
+
+sndcat : $(OBJSCAT)
+	$(CC) $(LFLAGS) $(OBJSCAT) -o sndcat
+
+sndinfo : $(OBJSINFO)
+	$(CC) $(LFLAGS) $(OBJSINFO) -o sndinfo
+
+sndmix : $(OBJSMIX)
+	$(CC) $(LFLAGS) $(OBJSMIX) -o sndmix
+
+sndmix.o : sndmix.h StringConversion.o
+	$(CC) $(CFLAGS) sndmix.cpp
 
 sndinfo.o : sndinfo.h
 	$(CC) $(CFLAGS) sndinfo.cpp
+
+sndcat.o : sndcat.h
+	$(CC) $(CFLAGS) sndcat.cpp
 
 ProgramObject.o : ProgramObject.h SoundFile.o
 	$(CC) $(CFLAGS) ProgramObject.cpp
@@ -35,7 +51,7 @@ Sample.o : Sample.h
 	$(CC) $(CFLAGS) Sample.cpp
 
 clean:
-	\rm *.o *~ sndifo
+	\rm *.o -f sndifo sndcat sndmix
 
 tar:
-	tar cfv SoundInfo.tar sndinfo.h sndinfo.cpp ProgramObject.cpp ProgramObject.h SoundFile.h SoundFile.cpp Cs229File.cpp Cs229File.h ABC229File.cpp ABC229File.h WavFile.cpp WavFile.h Instrument.cpp Instrument.h StringConversion.cpp StringConversion.h Sample.h Sample.cpp
+	tar cfv SoundInfo.tar sndinfo.h sndinfo.cpp sndcat.h sndcat.cpp sndmix.h sndmix.cpp ProgramObject.cpp ProgramObject.h SoundFile.h SoundFile.cpp Cs229File.cpp Cs229File.h ABC229File.cpp ABC229File.h WavFile.cpp WavFile.h Instrument.cpp Instrument.h StringConversion.cpp StringConversion.h Sample.h Sample.cpp

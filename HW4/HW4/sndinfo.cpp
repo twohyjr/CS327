@@ -1,9 +1,10 @@
 #include "sndinfo.h"
 
 int main(int argc, char * argv[]) {
-    sndinfo sound(argc,argv,"sndinfo");
+    int startPoint = 1;
+    sndinfo sound(argc,argv,"sndinfo",startPoint);
     if(argc > 1 && sound.checkForFlags(argc, argv) == 0){
-        sound.sounds[0]->display();
+        sound.display();
     }else{
         exit(0);
     }
@@ -11,8 +12,10 @@ int main(int argc, char * argv[]) {
 }
 
 int sndinfo::checkForFlags(int argc, char *argv[]){
-    char tmp;
+    int tmp;
     int pass = 0;
+    
+  
     while((tmp = getopt(argc,argv,"h"))!=-1)
     {
         switch(tmp){
@@ -20,7 +23,7 @@ int sndinfo::checkForFlags(int argc, char *argv[]){
             case 'h':
                 showHelpMenu();
                 pass = 1;
-                break;
+                exit(0);
             default:
                 cout << "There was an error in the switch system" << endl;
                 pass = 1;

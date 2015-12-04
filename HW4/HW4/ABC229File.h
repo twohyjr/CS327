@@ -13,7 +13,7 @@ public:
         getDataFromFile();
     }
     void getDataFromFile();
-    void display();
+    std::string getDisplay();
 private:
     int numberOfInstruments;
     std::string filename;

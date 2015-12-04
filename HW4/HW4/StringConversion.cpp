@@ -22,3 +22,17 @@ float StringConversion::getFloatFromString(string str){
     }
     return i;
 }
+
+std::string StringConversion::getStringFromInt(int num){
+    ostringstream myString;
+    myString << num;
+    
+    return myString.str();
+}
+
+std::string StringConversion::getStringFromFloat(float num){
+    ostringstream myString;
+    myString << num;
+    
+    return myString.str();
+}

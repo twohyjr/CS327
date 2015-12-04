@@ -70,31 +70,31 @@ void ABC229File::getDataFromFile(){
     }else{
         cout << "Unable to open file\n";
     }
-	//display();
 }
 
-
-void ABC229File::display(){
-    cout << "--------------------ABC229 File--------------------" << endl;
-    cout << "Filename:----------- " <<  this->filename << endl;
-    cout << "File Type:---------- " <<  this->fileType << endl;
-    cout << "Tempo:---------- " <<  this->tempo << endl;
-    cout << "Number of Instruments: " <<  this->numberOfInstruments << endl;
+std::string ABC229File::getDisplay(){
+    std::string outFile;
+    StringConversion con;
+    outFile.append("--------------------ABC229 File--------------------\n");
+    outFile.append("Filename:------------- " +  this->filename + '\n');
+    outFile.append("File Type:------------ " +  this->fileType + '\n');
+    outFile.append("Tempo:---------------- " + con.getStringFromInt(this->tempo) + '\n');
+    outFile.append("# of Instruments: ---- " + con.getStringFromInt(this->numberOfInstruments) + '\n');
     
     for (int i = 0; i < numberOfInstruments; i++) {
-        cout << "_______________________________" << endl;
-        cout << "        Instrument " << instruments[i]->instrumentNumber << endl;
-        cout << "Waveform: " << instruments[i]->waveform << endl;
-        cout << "Volume: " << instruments[i]->volume << endl;
-        cout << "Attack: " << instruments[i]->attack<< endl;
-        cout << "Decay: " << instruments[i]->decay << endl;
-        cout << "Sustain: " << instruments[i]->sustain << endl;
-        cout << "Release: " << instruments[i]->release << endl;
-        cout << "Score: " << instruments[i]->score << endl;
+        outFile.append("_______________________________\n");
+        outFile.append("        Instrument " + con.getStringFromInt(instruments[i]->instrumentNumber)+ '\n');
+        outFile.append("Waveform: " + instruments[i]->waveform + '\n');
+        outFile.append("Volume:   " + con.getStringFromFloat(instruments[i]->volume) + '\n');
+        outFile.append("Attack:   " + con.getStringFromFloat(instruments[i]->attack) + '\n');
+        outFile.append("Decay:    " + con.getStringFromFloat(instruments[i]->decay) + '\n');
+        outFile.append("Sustain:  " + con.getStringFromFloat(instruments[i]->sustain) + '\n');
+        outFile.append("Release:  " + con.getStringFromFloat(instruments[i]->release) + '\n');
+        outFile.append("Score:    " + instruments[i]->score + '\n');
     }
-    
-    cout << "---------------------------------------------------" << endl;
-    cout << endl;
+    outFile.append("---------------------------------------------------\n");
+
+    return outFile.c_str();
 }
 
 

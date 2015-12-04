@@ -6,18 +6,16 @@
  */
 
 #include <stdio.h>
+#include <vector>
+
 
 class Sample{
 public:
-    Sample(int frequecy, int high, int low);
-private:
-    int frequency;
-    int high;
-    int low;
+    Sample(std::vector<int> channels);
+    Sample(std::vector<int> channels, int multi);
 public:
-    int getFrequency();
-    int getHigh();
-    int getLow();
+    std::vector<int> channels;
+
 };
 
 #endif /* Sample_hpp */

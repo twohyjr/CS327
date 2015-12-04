@@ -23,7 +23,7 @@ using namespace std;
 class sndinfo : public ProgramObject{
 public:
     sndinfo();
-    sndinfo(int numberOfFiles,char *filenames[],std::string programName) : ProgramObject(numberOfFiles,filenames,programName){}
+    sndinfo(int numberOfFiles,char *filenames[],std::string programName,int startPoint) : ProgramObject(numberOfFiles,filenames,programName,startPoint){}
 public:
     int checkForFlags(int argCount, char *args[]);
     void showHelpMenu();

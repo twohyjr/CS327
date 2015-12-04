@@ -1,5 +1,7 @@
 #ifndef sndmix_hpp
 #define sndmix_hpp
+#include "ProgramObject.h"
+#include "StringConversion.h"
 
 /*
  (15 points)
@@ -16,7 +18,21 @@
 #include <iostream>
 #include <stdio.h>
 
-
-//TODO
+using namespace std;
+class sndmix : public ProgramObject{
+    
+public:
+    sndmix();
+    sndmix(int numberOfFiles,char *filenames[],std::string programName,int startPoint) : ProgramObject(numberOfFiles,filenames,programName,startPoint){}
+public:
+    int checkForFlags(int argCount, char *args[],sndmix* sound);
+    void showHelpMenu();
+    void createMixArrays(int count, char* parameters[], int startPoint);
+public:
+    int fileCount;
+    vector<int> multipliers;
+    vector<std::string> filenames;
+    
+};
 
 #endif /* sndmix_hpp */
