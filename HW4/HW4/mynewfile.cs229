@@ -1,0 +1,21 @@
+Cs229
+
+#This File Was Created By sndmix
+
+Samples       7
+
+Channels      3
+
+BitRes        8
+
+SampeleRate   1
+
+StartData
+0   -127   127
+10   45   -103
+20   -4   300
+16   -254   254
+18   90   -206
+20   -8   600
+22   18   28
+
