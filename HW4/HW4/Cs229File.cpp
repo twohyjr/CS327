@@ -1,4 +1,5 @@
 #include "Cs229File.h"
+#include <cmath>
 
 Cs229File::Cs229File(){
     filename = "";
@@ -11,6 +12,7 @@ Cs229File::Cs229File(){
 }
 
 void Cs229File::getDataFromFile(){
+    rowCount = 0;
     std::string line;
     StringConversion strCon;
     int count = 0;
@@ -73,15 +75,50 @@ void Cs229File::getDataFromFile(){
 
 void Cs229File::addSample(std::vector<int> channels, int multi){
     for (int i = 0; i < (int)(channels.size()); i++) {
-        channels[i] = channels[i] * multi;
+        int newMulti = checkSampleRangeValues(multi, channels[i]);
+        channels[i] = newMulti;
     }
      samples.push_back(*new Sample(channels));
 }
 
-bool Cs229File::checkSampleRangeValues(Sample sample){
+//This checks the sample range vs the channel and adjusts it to the high
+int Cs229File::checkSampleRangeValues(int multi, int channel){
     
-    //Checks the sample rate compared to a bit depth
-    return true;
+    int high = (pow(2, bitDepth - 1)) - 1;
+    int low = high * -1;
+    int newVal = channel * multi;
+    
+    if (newVal > high) {
+        return high;
+    }else if( newVal < low){
+        return low;
+    }else{
+        return newVal;
+    }
+}
+
+//    3	    6	 9
+//
+//    12	15	 18
+//
+//    21	24	 27
+
+void Cs229File::concatinateSamples(std::vector<int> channels, int multi,bool add){
+    if(add != true){
+        for (int i = 0; i < (int)(channels.size()); i++) {
+            int newMulti = checkSampleRangeValues(multi, channels[i]);
+            channels[i] = newMulti;
+        }
+        samples.push_back(*new Sample(channels));
+    }else{
+       	for (int i = 0; i < (int)channels.size(); i++) {
+            int newMulti = checkSampleRangeValues(multi, channels[i]);
+            samples[rowCount].channels[i] += newMulti;
+        }
+    }
+    cout << rowCount << endl;
+    rowCount++;
+
 }
 
 std::string Cs229File::createNewFile(std::string programName){
@@ -105,6 +142,39 @@ std::string Cs229File::createNewFile(std::string programName){
     return newFileString;
 }
 //+-(2^n-1)-1
+
+std::string Cs229File::printChannels(std::string wavetype){
+    StringConversion con;
+    std::string newFileString;
+    newFileString.append("Cs229\n");
+    newFileString.append("\n");
+    newFileString.append("#This File Was Created By sndgen\n");
+    newFileString.append("\n");
+    newFileString.append("Samples       " + con.getStringFromInt(numberOfSamples) + "\n");
+    newFileString.append("\n");
+    newFileString.append("Channels      " + con.getStringFromInt(numberOfChannels) + "\n");
+    newFileString.append("\n");
+    newFileString.append("BitRes        " + con.getStringFromInt(bitDepth) + "\n");
+    newFileString.append("\n");
+    newFileString.append("SampeleRate   " + con.getStringFromFloat(sampleRate) + "\n");
+    newFileString.append("\n");
+    newFileString.append("#WaveType     ");
+    newFileString.append(wavetype);
+    newFileString.append("\n");
+    newFileString.append("\n");
+    newFileString.append("StartData\n");
+    
+    for (int i = 0; i < numberOfSamples; i++) {
+        int nums = (int)(samples[i].channels.size());
+        for (int j = 0; j < nums; j++) {
+            newFileString.append(con.getStringFromInt(samples[i].channels[j]));
+            newFileString.append("\n");
+        }
+
+    }
+    
+    return newFileString;
+}
 
 std::string Cs229File::printSamples(){
     std::string sampleString;

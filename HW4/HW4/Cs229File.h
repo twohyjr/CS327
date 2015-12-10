@@ -8,6 +8,7 @@
 class Cs229File: public SoundFile {
 public:
     Cs229File();
+    Cs229File(vector<short> samples);
     Cs229File(std::string filename,std::string filetype){
         this->filename = filename;
         this->fileType = filetype;
@@ -19,12 +20,14 @@ public:
         getDataFromFile();
     }
     void getDataFromFile();
+    std::string printChannels(std::string wavetype);
     std::string getDisplay();
     float getFloatFromString(string str);
     float getIntFromString(string str);
-    bool checkSampleRangeValues(Sample sample);
+    int checkSampleRangeValues(int multi, int channel);
     std::string printSamples();
     std::string createNewFile(std::string programName);
+    void concatinateSamples(std::vector<int> channels, int multi, bool add);
 public:
     std::string filename;
     std::string fileType;
@@ -32,6 +35,7 @@ public:
     int bitDepth;
     int numberOfChannels;
     int numberOfSamples;
+    int rowCount;
     double lengthOfSound;
     void addSample(std::vector<int> channels, int multi);
    	vector<Sample> samples;

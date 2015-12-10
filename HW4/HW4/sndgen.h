@@ -1,5 +1,8 @@
 #ifndef sndgen_hpp
 #define sndgen_hpp
+#include "ProgramObject.h"
+#include "ADSR.h"
+#include <cmath>
 
 /*
  (20 points)
@@ -31,9 +34,38 @@
  16) --pf p : Fraction of the time the pulse wave is “up”
 */
 
-#include <iostream>
-#include <stdio.h>
-
-//TODO
+using namespace std;
+class sndgen : public ProgramObject{
+public:
+    sndgen();
+    sndgen(int numberOfFiles,char *filenames[],std::string programName,int startPoint) : ProgramObject(numberOfFiles,filenames,programName,startPoint){}
+public:
+    int checkForFlags(int argCount, char *args[]);
+    ADSR createADSR(sndgen gen);
+    void showHelpMenu();
+    void createWave(ADSR adsr);
+    int checkSampleRangeValues(int channel);
+public:
+    std::string outputFile;
+    int bits;
+    int sampleRate;
+    
+    double frequency;
+    double duration;
+    double peakVolume;
+    
+    double attackTime;
+    double decayTime;
+    double sustainVolume;
+    double releaseTime;
+    
+    bool sine;
+    bool triangle;
+    bool sawtooth;
+    bool pulse;
+    double pulseWaveUp;
+    
+    
+};
 
 #endif /* sndgen_hpp */

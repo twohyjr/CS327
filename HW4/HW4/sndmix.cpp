@@ -7,13 +7,11 @@ int main(int argc, char * argv[]) {
         std::string name;
         name = argv[i];
         if (name[0] == '-') {
-            startPoint = i + 2;
+            startPoint = i + 1;
         }
     }
     sndmix sound(argc,argv,"sndmix",startPoint);
     if(argc > 1 && sound.checkForFlags(argc, argv, &sound) == 0){
-        //sound.mixSoundFiles(argc, argv);
-        
         
        	sound.createMixArrays(argc, argv, startPoint);
         sound.mixSoundFiles(sound.fileCount, sound.filenames, sound.multipliers);

@@ -109,8 +109,7 @@ Cs229File ProgramObject::concatinateSoundFiles(int filecount, char *filenames[])
 
 Cs229File ProgramObject::mixSoundFiles(int filecount, vector<std::string> filenames, vector<int> fileMulti){
     vector<Cs229File> files;
-//
-//    
+    bool add = false;
     Cs229File newFile = *new Cs229File();
     newFile.filename = "Mixed CS229 File";
     
@@ -118,29 +117,42 @@ Cs229File ProgramObject::mixSoundFiles(int filecount, vector<std::string> filena
     Cs229File compareFile = *new Cs229File(filenames[0],createFileType(filenames[0]));
     newFile.bitDepth = compareFile.bitDepth;
     int currentChannelNumber = compareFile.numberOfChannels;
-
+	
+    //create the first generic sample
+//    3	    6	 9
+//    
+//    12	15	 18
+//    
+//    21	24	 27
+    
     for(int i = 0; i < (int)filenames.size(); i++){
         std::string type = createFileType(filenames[i]);
         std::string name = filenames[i];
         if(type == ".cs229"){
             files.push_back(*new Cs229File(name,type));
+            
             //Checks the validity of the new files else exits with error
             if(files[i].bitDepth != compareFile.bitDepth){
+                
                 exitWithError("Files Bit Depth Does Not Match", -1);
             }
             if(files[i].numberOfChannels != currentChannelNumber){
                 exitWithError("Channels Do Not Match With Files", -1);
             }
+            files[i].numberOfSamples = compareFile.numberOfSamples;
             int x = files[i].numberOfSamples;
             
             for (int j = 0; j < x ; j++) {
-                newFile.addSample(files[i].samples[j].channels, fileMulti[i]);
+               newFile.concatinateSamples(files[i].samples[j].channels, fileMulti[i], add);
+               // newFile.addSample(files[i].samples[j].channels, fileMulti[i]);
             }
+            newFile.rowCount = 0;
         }else{
             exitWithError("Wrong File Type Conversion", -1);
         }
-        
+         add = true;
     }
+   
     newFile.numberOfChannels = currentChannelNumber;
     newFile.sampleRate = 1;
     int size =(int)(newFile.samples.size());
@@ -167,8 +179,7 @@ void ProgramObject::writeToFile(Cs229File newFile){
     std::ofstream myfile(outputFile.c_str());
     myfile << newFile.createNewFile(programName).c_str();
     myfile.close();
-    
-    //cout << newFile.getDisplay() <<endl;
+
 }
 
 std::string ProgramObject::createFileType(std::string filename){

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD944A901C153A02007EE0D3 /* ADSR.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD944A8E1C153A02007EE0D3 /* ADSR.cpp */; };
+		BD944A9A1C17E223007EE0D3 /* sndgen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDD6AC371C03AF5300728065 /* sndgen.cpp */; };
 		BDD6AC151C024CCC00728065 /* ProgramObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDD6AC131C024CCC00728065 /* ProgramObject.cpp */; };
 		BDD6AC181C025C0000728065 /* SoundFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDD6AC161C025C0000728065 /* SoundFile.cpp */; };
 		BDD6AC191C025CBB00728065 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = BDD6AC0D1C02495800728065 /* Makefile */; };
@@ -17,7 +19,6 @@
 		BDD6AC311C02805F00728065 /* StringConversion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDD6AC301C02805F00728065 /* StringConversion.cpp */; };
 		BDD6AC511C03B12100728065 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = BDD6AC4F1C03B12100728065 /* README.md */; };
 		BDD6AC551C03B53300728065 /* Sample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDD6AC531C03B53300728065 /* Sample.cpp */; };
-		BDD6AC5E1C041DF200728065 /* sndinfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDD6AC061C0248F100728065 /* sndinfo.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +34,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BD944A8A1C152F11007EE0D3 /* holy_mashed_potatoes.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = holy_mashed_potatoes.wav; path = HW4/holy_mashed_potatoes.wav; sourceTree = "<group>"; };
+		BD944A8C1C153145007EE0D3 /* happy.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = happy.wav; sourceTree = "<group>"; };
+		BD944A8E1C153A02007EE0D3 /* ADSR.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ADSR.cpp; sourceTree = "<group>"; };
+		BD944A8F1C153A02007EE0D3 /* ADSR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADSR.h; sourceTree = "<group>"; };
+		BD944A971C17834B007EE0D3 /* TestSound.cs229 */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestSound.cs229; sourceTree = "<group>"; };
 		BDD6AC031C0248F100728065 /* HW4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HW4; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDD6AC061C0248F100728065 /* sndinfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = sndinfo.cpp; sourceTree = "<group>"; };
 		BDD6AC0D1C02495800728065 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; name = Makefile; path = HW4/Makefile; sourceTree = "<group>"; };
@@ -89,6 +95,8 @@
 			children = (
 				BDD6AC051C0248F100728065 /* HW4 */,
 				BDD6AC041C0248F100728065 /* Products */,
+				BD944A8C1C153145007EE0D3 /* happy.wav */,
+				BD944A8A1C152F11007EE0D3 /* holy_mashed_potatoes.wav */,
 				BDD6AC521C03B24200728065 /* MyAbcFile.ABC229 */,
 				BDD6AC0D1C02495800728065 /* Makefile */,
 				BDD6AC4D1C03B12100728065 /* AnotherCs229File.cs229 */,
@@ -110,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				BDD6AC561C03C0FF00728065 /* main.cpp */,
+				BD944A971C17834B007EE0D3 /* TestSound.cs229 */,
 				BDD6AC111C024CAA00728065 /* FileTypes */,
 				BDD6AC101C024C6900728065 /* Objects */,
 				BDD6AC2C1C02762700728065 /* Util */,
@@ -129,6 +138,8 @@
 				BDD6AC241C02600E00728065 /* Instrument.h */,
 				BDD6AC531C03B53300728065 /* Sample.cpp */,
 				BDD6AC541C03B53300728065 /* Sample.h */,
+				BD944A8E1C153A02007EE0D3 /* ADSR.cpp */,
+				BD944A8F1C153A02007EE0D3 /* ADSR.h */,
 			);
 			name = Objects;
 			sourceTree = "<group>";
@@ -233,14 +244,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDD6AC251C02600E00728065 /* Instrument.cpp in Sources */,
-				BDD6AC5E1C041DF200728065 /* sndinfo.cpp in Sources */,
 				BDD6AC201C025E7E00728065 /* Cs229File.cpp in Sources */,
 				BDD6AC511C03B12100728065 /* README.md in Sources */,
+				BD944A901C153A02007EE0D3 /* ADSR.cpp in Sources */,
 				BDD6AC221C025E7E00728065 /* ABC229File.cpp in Sources */,
 				BDD6AC151C024CCC00728065 /* ProgramObject.cpp in Sources */,
 				BDD6AC211C025E7E00728065 /* WavFile.cpp in Sources */,
 				BDD6AC191C025CBB00728065 /* Makefile in Sources */,
 				BDD6AC311C02805F00728065 /* StringConversion.cpp in Sources */,
+				BD944A9A1C17E223007EE0D3 /* sndgen.cpp in Sources */,
 				BDD6AC181C025C0000728065 /* SoundFile.cpp in Sources */,
 				BDD6AC551C03B53300728065 /* Sample.cpp in Sources */,
 			);
@@ -361,6 +373,7 @@
 				BDD6AC0C1C0248F100728065 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

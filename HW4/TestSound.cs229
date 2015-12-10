@@ -17,6 +17,6 @@ SaMpLeRaTe  11025
 # From here on things are more rigid
 
 STARTdata
-0   -127  127
-10  45    -103
-20  -4    300 
+1   2   3
+1   2   3
+1   2   3

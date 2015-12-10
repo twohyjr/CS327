@@ -2,6 +2,7 @@
 #define WavFile_h
 typedef int DWORD;
 #include "SoundFile.h"
+#include <cstring>
 
 class WavFile: public SoundFile {
 public:
@@ -16,10 +17,14 @@ private:
     std::string filename;
     std::string fileType;
     char type[4];
-    DWORD size, chunkSize;
-    short formatType, channels;
-    DWORD sampleRate, averageBytesPerSecond;
-    short bytesPerSample, bitsPerSample;
+    DWORD size;
+    DWORD chunkSize;
+    short formatType;
+    short channels;
+    DWORD sampleRate;
+    DWORD averageBytesPerSecond;
+    short bytesPerSample;
+    short bitsPerSample;
     DWORD dataSize;
     
 };

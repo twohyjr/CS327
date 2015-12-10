@@ -2,9 +2,10 @@ Cs229
 
 # A really short sound to illustrate this file format
 
-Samples    3
+Samples    4
 
 # We are doing something bizarre with the channels?
+
 
 channels   3
 
@@ -17,6 +18,7 @@ SaMpLeRaTe  11025
 # From here on things are more rigid
 
 STARTdata
-0   -127  127
-10  45    -103
-20  -4    300 
+1  2  3
+4  5  6
+7  8  9
+10	11	12
